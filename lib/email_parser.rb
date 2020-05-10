@@ -9,8 +9,7 @@ class EmailAddressParser
   @@email_addresses = []
   
   def initialize(string)
-    string.contains?(",") @@email_addresses.push string.split(", ")
-    
+    string.include?(",") ? @@email_addresses.push string.split(", ") : @@email_addresses.push string.split
     
   end
   
