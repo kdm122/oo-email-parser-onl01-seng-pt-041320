@@ -14,7 +14,7 @@ class EmailAddressParser
   end
   
   def parse
-  #  emails.include?(",") ? @compiled_list.push string.split(", ") : @compiled_list.push string.split
+    emails.include?(",") ? compiled_list.push string.split(", ") : compiled_list.push string.split
     
     @compiled_list
   end
