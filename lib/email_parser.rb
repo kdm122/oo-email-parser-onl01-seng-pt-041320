@@ -8,8 +8,8 @@ class EmailAddressParser
   
   @@email_addresses = []
   
-  def initialize(string)
-    string.include?(",") ? @@email_addresses.push string.split(", ") : @@email_addresses.push string.split
+  def initialize
+  #  string.include?(",") ? @@email_addresses.push string.split(", ") : @@email_addresses.push string.split
     
   end
   
