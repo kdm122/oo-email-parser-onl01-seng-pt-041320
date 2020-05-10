@@ -5,16 +5,18 @@
 
 class EmailAddressParser
   attr_accessor :emails
-
   
+  @compiled_list = []
+    
   def initialize(emails)
-  #  string.include?(",") ? @@email_addresses.push string.split(", ") : @@email_addresses.push string.split
   @emails = emails
     
   end
   
   def parse
-    @@email_addresses
+    emails.include?(",") ? @compiled_list.push string.split(", ") : @compiled_list.push string.split
+    
+    @compiled_list
   end
   
   
