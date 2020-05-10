@@ -15,9 +15,9 @@ class EmailAddressParser
   
   def parse
     if @emails.include?(",") 
-      @@compiled_list.push string.split(", ") 
+      @@compiled_list.push @emails.split(", ") 
       else
-        @@compiled_list.push string.split
+        @@compiled_list.push @emails.split
     end
     @@compiled_list
   end
